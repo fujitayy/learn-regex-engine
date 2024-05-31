@@ -1,0 +1,10 @@
+[package]
+name = "learn-regex-engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["Yuichi Fujita <fujita.y@edocode.co.jp>"]
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = { version = "1.0.85", features = ["backtrace"] }
+nom = "7.1.3"
