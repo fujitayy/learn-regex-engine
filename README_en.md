@@ -177,13 +177,36 @@ stateDiagram-v2
   S6 --> S7 : ε
 ```
 
-## Explanation of the Implementation
+## Implementation Explanation
 
-Let's discuss the code:
+The implementation uses Rust, which is the language I am most proficient in, because it meets the following criteria:
 
-1. **Parsing of Regular Expressions**: We skip the detailed parsing of regular expressions.
-2. **Representation of NFA in Code**: How we represent the NFA using data structures and classes.
-3. **Processing of Input Strings by NFA**: The flow of how the NFA processes the input string to determine matches.
-4. **Running Examples**: Demonstrating the operation with actual examples.
+- Clearly defines types and their possible data structures (algebraic data types, sum types)
+  - Necessary for the implementation of ε-NFA
+- Can convert UTF8 strings into arrays of Unicode code points
+  - Necessary to simplify the implementation of ε-NFA
+- Allows easy definition of recursive graph structures
+  - Necessary to simplify the implementation of ε-NFA
+- Has user-friendly parser combinator libraries
+  - Necessary for creating a regular expression parser
 
-This approach allows us to understand the mechanics behind regular expressions and their implementation as automata, providing a clear and practical understanding of both theoretical and applied aspects.
+The rest will be explained while looking at the code.
+
+The process is as follows:
+
+1. Parsing of regular expressions is skipped
+2. How NFAs are represented in the code
+3. How the NFA processes the input string
+4. Actually running it
+
+## Software Required
+
+- Rust programming environment
+  - You can install it following the instructions here: <https://www.rust-lang.org/tools/install>
+
+## How to Run
+
+- Execute unit tests
+  - `cargo test`
+- Run the program's main function
+  - `cargo run`
