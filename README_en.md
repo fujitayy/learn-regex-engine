@@ -34,14 +34,6 @@ If the string to be checked contains recursive structures, a more expressive par
 
 ## Operational Principles of Regular Expressions
 
-- Refer to other convenient materials here
-  - For time-saving purposes
-- If no good materials are available, create them
-- Since regular expressions and automata match, if the automaton reaches an accepting state, it is considered a match
-  - Here, we only use the result that regular expressions, NFAs, and DFAs can express the same thing
-    - Thus, whether a regular expression matches can be rephrased as whether the equivalent automaton reaches an accepting state
-- Regular expressions -> Compilation to automaton -> Execution of automaton, these are the three steps
-
 Regular expressions operate by being converted into a mathematical model for computers known as an automaton.
 
 ### What is an Automaton?
