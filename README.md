@@ -51,11 +51,11 @@
 
 ```mermaid
 stateDiagram-v2
-    初期状態 --> State1 : a
+    [初期状態] --> State1 : a
     State1 --> State2 : b
     State1 --> State3 : c
-    State2 --> 終了状態 : c
-    State3 --> 終了状態 : e
+    State2 --> [終了状態] : c
+    State3 --> [終了状態] : e
 ```
 
 正規表現と関係があるオートマトンとしては次の様なものがあります。
